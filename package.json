@@ -1,0 +1,15 @@
+{
+  "name": "eslint-plugin-disable-variables-odd-lines",
+  "version": "1.0.0",
+  "description": "Funny rule that disallow use variables on odd line (special for HolyJS 2024)",
+  "main": "index.js",
+  "scripts": {
+    "test": "node rule.test.js"
+  },
+  "keywords": [],
+  "author": "sumthief",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "9.0.0"
+  }
+}
