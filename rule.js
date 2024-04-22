@@ -1,9 +1,9 @@
 function CheckNodeLineIsOdd(ctx, node) {
-    const NodeType = node.type === 'VariableDeclarator' ? 'Variables' : 'Functions';
+    const NodeType = node.type === 'VariableDeclarator' ? 'переменных' : 'функций';
     if (node.loc.start.line % 2 === 0) {
         ctx.report({
             node,
-            message: NodeType + ' on odd lines are not allowed'
+            message: 'Объявление ' + NodeType + ' на четных строках запрещено'
         })
     }
 }
@@ -12,7 +12,7 @@ module.exports = {
     meta: {
         type: 'problem',
         docs: {
-            description: 'Disallow use variables on odd line'
+            description: 'Запрет объявления переменных и функций на четных строках'
         },
         schema: []
     },
